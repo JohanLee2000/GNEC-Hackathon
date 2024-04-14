@@ -3,6 +3,9 @@
 Install expo
 npm install -g expo-cli
 
+Run expo
+npx expo start --tunnel {--tunnel is only for BCM WiFi}
+
 //Notes
 React Navigation - https://reactnative.dev/docs/navigation
 
