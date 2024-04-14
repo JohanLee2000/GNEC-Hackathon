@@ -6,8 +6,8 @@ const Home = ({ navigation }) => {
         <View style={styles.container}>
             <Text>Home Screen</Text>
             <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate('Details')} // Make sure you have a DetailsScreen defined to use this
+                title="Go to Profile"
+                onPress={() => navigation.navigate('Profile')} // Make sure you have a DetailsScreen defined to use this
             />
         </View>
     );
