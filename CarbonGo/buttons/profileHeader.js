@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import favicon from '../assets/favicon.png';
 
-const profileHeader = ({ navigation }) => {
+const ProfileHeader = ({ navigation }) => {
 	return(
 		<View style={styles.container}>
 		<View style={styles.leftContent}>
@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
 	}
   });
 
-export default profileHeader;
+export default ProfileHeader;
