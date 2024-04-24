@@ -9,6 +9,14 @@ const Home = ({ navigation }) => {
                 title="Go to Profile"
                 onPress={() => navigation.navigate('Profile')} // Make sure you have a DetailsScreen defined to use this
             />
+            <Button
+                title="Go to Achievements"
+                onPress={() => navigation.navigate('Achievements')} // Make sure you have a DetailsScreen defined to use this
+            />
+            <Button
+                title="Go to Settings"
+                onPress={() => navigation.navigate('Settings')} // Make sure you have a DetailsScreen defined to use this
+            />
         </View>
     );
 };
