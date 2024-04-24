@@ -6,10 +6,10 @@ const Profile = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text>Profile Screen</Text>
-      <Button
+      {/* <Button
         title="Go Back to Home"
         onPress={() => navigation.goBack()}
-      />
+      /> */}
     </View>
   );
 };

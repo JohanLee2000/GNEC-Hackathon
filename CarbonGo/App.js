@@ -3,23 +3,26 @@ import { StyleSheet, Text, View } from 'react-native';
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './screens/Home';
 import Profile from './screens/Profile';
 import Settings from './screens/Settings';
 import Achievements from './screens/Achievements';
 
 const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Tab.Navigator initialRouteName="Home">
         <>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Profile" component={Profile} />
-          <Stack.Screen name="Achievements" component={Achievements} />
-          <Stack.Screen name="Settings" component={Settings} />
+          <Tab.Screen name="Home" component={Home} />
+          <Tab.Screen name="Profile" component={Profile} />
+          <Tab.Screen name="Achievements" component={Achievements} />
+          <Tab.Screen name="Settings" component={Settings} />
         </>
-      </Stack.Navigator>
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
