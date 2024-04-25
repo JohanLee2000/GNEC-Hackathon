@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //Import screens
-import Home from './screens/Home';
+import HomeScreen from './screens/Home';
 import Profile from './screens/Profile';
 import Settings from './screens/Settings';
 import Achievements from './screens/Achievements';
@@ -18,8 +18,8 @@ function HomeStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen 
-        name="Home" 
-        component={Home} 
+        name="HomeScreen" 
+        component={HomeScreen} 
         options={({ navigation }) => ({
           header: () => <ProfileHeader navigation={navigation} />
         })}
