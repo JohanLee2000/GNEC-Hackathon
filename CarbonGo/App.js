@@ -8,6 +8,7 @@ import HomeScreen from './screens/Home';
 import Profile from './screens/Profile';
 import Settings from './screens/Settings';
 import Achievements from './screens/Achievements';
+import OffsetLog from './screens/OffsetLog';
 
 import ProfileHeader from './buttons/profileHeader';
 
@@ -29,6 +30,15 @@ function HomeStack() {
         component={Profile}
         options={{ headerTitle: 'Profile' }}
       />
+      <Stack.Screen
+        name="OffsetLog"
+        component={OffsetLog}
+        options={{
+          headerTitle: 'Offset Log', 
+          presentation: 'modal'
+        }}
+
+      />
     </Stack.Navigator>
   );
 }
@@ -39,7 +49,7 @@ export default function App() {
       <Tab.Navigator initialRouteName="Home">
         
         <Tab.Screen name="Home" component={HomeStack} />
-          {/* <Tab.Screen name="Profile" component={Profile} /> */}
+          <Tab.Screen name="Profile" component={Profile} />
           <Tab.Screen name="Achievements" component={Achievements} />
           <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>

@@ -5,6 +5,10 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text>Home Screen</Text>
+            <Button
+                title="Offset Log"
+                onPress={() => navigation.navigate('OffsetLog')}
+            />
             {/* <Button
                 title="Go to Profile"
                 onPress={() => navigation.navigate('Profile')} // Make sure you have a DetailsScreen defined to use this
